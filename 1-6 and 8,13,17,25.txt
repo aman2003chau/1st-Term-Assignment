@@ -1,0 +1,290 @@
+// question no 1 c program to perform all arithmatic operations 
+
+
+#include<stdio.h>
+int main ()
+{
+	int a,b,sum,div,mult,diff,rem;
+	printf("enter frist value ");
+	scanf("%d",&a);
+	printf("enter second value ");
+	scanf("%d",&b);
+	sum=a+b;
+	div=a/b;
+	mult=a*b;
+	diff=a-b;
+	rem=a%b;
+	printf("\naddition is  %d",sum);
+	printf("\nsubtraction is  %d",diff);
+	printf("\nmultiplication is  %d",mult);
+	printf("\ndivision is  %d",div);
+	printf("\nremender is  %d",rem);
+	return 0;
+}
+
+
+// question no 2 C program to find area of triangle if base and height are given
+
+#include<stdio.h>
+int main()
+{
+	int HB, area, hight,  base;
+	printf("Enter the value of base ");
+	scanf("%d",&base);
+	printf("Enter the value of hight ");
+	scanf("%d",&hight);
+	HB=hight*base;
+	area=HB/2;
+	printf("\n Area (of given hight and base) is %d",area);
+	return 0;
+}
+
+
+
+
+// question no 3 C program to find all angles of triangle if two angles are given 
+
+
+#include<stdio.h>
+int main ()
+{
+	int f,s,t,sum=180,fs;
+	printf("Enter the frist angle ");
+	scanf("%d",&f);
+	printf("Enter the second  angle ");
+	scanf("%d",&s);
+	fs=f+s;
+	t=sum-fs;
+	printf(" \n Frist angle is %d",f);
+	printf(" \n Second angle is %d",s);
+	printf(" \n Third angle is %d",t);
+	return 0;
+}
+
+
+// question no 4 C program to convert days in to years, weeks and days.
+
+
+#include<stdio.h>
+int main ()
+{
+	int days, weeks, years;
+	printf("How many days convert into weeks and years");
+	scanf("%d",&days);
+	weeks=days/7;
+	years=days/365;
+	printf(" \n days %d",days);
+	printf(" \n weeks %d",weeks);
+	printf(" \n years %d",years);
+	return 0;
+}
+
+
+// question no 5 C program to fint the power and root of any number.
+
+
+
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+	float b, m, n;
+	printf("Enter the any number for square and root");
+	scanf("%f",&n);
+	m=sqrt(n);
+	printf("\n Root is %f",m);
+	b=n*n;
+	printf("\n square is %f",b);
+	return 0;
+	
+}
+
+
+
+// question no 6 C program to calculate total, averge and percentage and grades of five subject.
+
+
+#include<stdio.h>
+int main ()
+{
+	int total,average,percentage,grades;
+	float per ;
+	
+	int math ,phy, chem,hindi,eng;
+	printf("enter the number in math ");
+	scanf("%d",&math);
+	printf("enter the number in phy ");
+	scanf("%d",&phy);
+	printf("enter the number in chemistry ");
+	scanf("%d",&chem);
+	printf("enter the number in hindi ");
+	scanf("%d",&hindi);
+	printf("enter the number in english ");
+	scanf("%d",&eng);
+	total=math+phy+chem+hindi+eng;
+	printf(" \n total is %d ",total);
+	average=total/5;
+	printf(" \n average in all subject %d",average);
+	per=(total*100)/500;
+	printf(" \n percentage  in all subjects %f ",per);
+	if ( per >95)
+	{
+		printf(" \n your over all grade is A+");
+		
+	}
+	else if( per >85)
+	{
+		printf("\n your over all grade is A");
+	}
+	else if ( per >75)
+	{
+		printf(" \n your over all grade is B");
+		
+	}
+	else if ( per >65)
+	{
+		printf(" \n your over all grade is C");
+		
+	}
+	else if ( per >55)
+	{
+		printf("\n your over all grade is D");
+	}
+	return 0;
+}
+
+
+
+// question no 8 C program swap two number USING 3RD VARIABLE AND WITHOUT 3RD VARIBLE.
+
+ // WITHOUT USE 3RD VARIVALE
+ 
+#include<stdio.h>
+int main ()
+{
+	int a,b;
+	printf("Enter the frist varible: ");
+	scanf("%d",&a);
+	printf("Enter the second varible: ");
+	scanf("%d",&b);
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	printf("\n value in frist varible : %d",a);
+	printf("\n value in second varible : %d",b);
+	return 0;
+	
+	}
+
+// USE 3RD VARIBALE	
+
+	#include<stdio.h>
+int main ()
+{
+	int a,b,c;
+	printf("Enter the frist varible: ");
+	scanf("%d",&a);
+	printf("Enter the second varible: ");
+	scanf("%d",&b);
+	c=a;
+	a=b;
+	b=c;
+	printf("\n value in frist varible : %d",a);
+	printf("\n value in second varible : %d",b);
+	return 0;
+	
+	}
+
+
+
+// question no 13 C program to chake vowel and consonant using switch case.
+
+
+#include<stdio.h>
+int main()
+{
+	char ab ;
+	printf("\n enter the any charter :");
+	scanf("%c",&ab);
+	
+	switch (ab)
+	{
+	
+	case 'a':
+		{ 
+		printf("vowel");
+		break;
+		}
+		case 'e':
+		{ 
+		printf("vowel");
+		break;
+		}
+		case 'i':
+		{ 
+		printf("vowel");
+		break;
+		}
+		case 'o':
+		{ 
+		printf("vowel");
+		break;
+		}
+		case 'u':
+		{ 
+		printf("vowel");
+		break;
+		}
+		default :
+			{
+				printf(" this is consonant charatre");
+			}
+		}
+			return 0;
+}
+
+
+
+
+// question no 17 C program print all even numbers AND sum of it from 1 to n .
+
+
+#include<stdio.h>
+int main ()
+{
+	int n , s,sum=0;
+	printf("even number 1 to ");
+	scanf("%d",&n);
+	for (int i=1;i<=n;i++)
+	{
+		if(i%2==0){
+			sum=sum+i;
+        printf ("\n %d",i);		
+		}
+	}
+	printf("\n total is  %d",sum);
+	return 0;
+}
+
+
+
+
+
+// question no 25 C program to print fibonacci series up to n terms.
+
+
+#include<stdio.h>
+int main ()
+{
+	int n, a=0,b=1,c;
+	printf("0 to : ");
+	scanf("%d",&n);
+	for (int i=1;i<=n;i++)
+	{
+		c=a+b;
+		a=b;
+		b=c;
+		printf("\n %d",a);
+	}
+	return 0;
+}
